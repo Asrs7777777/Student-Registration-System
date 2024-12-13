@@ -18,8 +18,8 @@ document.getElementById("student-form").addEventListener("submit", function(even
       return;
     }
   
-    if (!/^\d+$/.test(studentId)) {
-      alert("Student ID should only contain numbers.");
+    if (!/^\d{5}$/.test(studentId)) {
+      alert("Please enter a valid studentID number(5 digits)");
       return;
     }
   
