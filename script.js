@@ -13,7 +13,7 @@ document.getElementById("student-form").addEventListener("submit", function(even
       return;
     }
   
-    if (!/^[A-Za-z]+$/.test(studentName)) {
+    if (!/^[A-Za-z\s]+$/.test(studentName)) {
       alert("Student name should only contain letters.");
       return;
     }
